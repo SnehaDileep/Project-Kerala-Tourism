@@ -1,0 +1,117 @@
+/* navbar link styling */
+.nav-link
+{
+    color: #000;
+    font-size: 95%;
+    font-weight: bold;
+    padding: 3px;
+}
+
+body 
+{
+	margin: 0;
+	margin-bottom: 20px;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+	background-image: url('../image/background_login.png');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	height: auto;
+}
+
+.contact-form 
+{
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	bottom: 50em;
+	transform: translate(-50%, -50%);
+	width: fit-content;
+	height: fit-content;
+	padding: 80px 40px;
+	background: rgba(0, 0, 0, 0.5);
+}
+.avatar 
+{
+	position: absolute;
+	align-items: center;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	overflow: hidden;
+	top: calc(-80px/2);
+	left: 160px;
+}
+.contact-form h2 
+{
+	margin: 0;
+	padding: 0 0 20px;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+}
+.contact-form label 
+{
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+	color: #fff;
+}
+.contact-form input 
+{
+	width: 100%;
+	margin-bottom: 20px;
+}
+.contact-form input[type=email], .contact-form input[type=password] {
+	border: none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: #fff;
+	font-size: 16px;
+}
+.contact-form input[type=submit] {
+	height: 30px;
+	color: #fff;
+	font-size: 15px;
+	background: red;
+	cursor: pointer;
+	border-radius: 25px;
+	border: none;
+	outline: none;
+	margin-top: 15%;
+}
+.contact-form a 
+{
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
+}
+.contact-form h5{
+	color: black;
+}
+p a{
+	text-decoration: none;
+	text-transform: uppercase;
+    background-color: dodgerblue;
+    padding: 10px 30px;
+    display: inline-block;
+    color: #fff;
+    margin-top: 15px;
+    border-radius: 50px;
+    font-weight: bold;
+}
+p a:hover
+{
+	color: darkred;
+    background-color: darkseagreen;
+    font-weight: bold;
+}
+input[type=checkbox] 
+{
+	width: 20%;
+}
