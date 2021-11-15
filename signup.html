@@ -8,6 +8,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 	<link rel="stylesheet" href="./css/signup.css">
 </head>
 <body background="./image/signupbg.png">
@@ -42,61 +43,77 @@
  
 <div class="wrapper">
 
-    <div class="title">
-      Registration Form
-    </div>
-    <!-- textfield and password -->
-    <div class="form">
-       <div class="inputfield">
-          <label>First Name</label>
-          <input type="text" class="input">
-       </div>  
-        <div class="inputfield">
-          <label>Last Name</label>
-          <input type="text" class="input">
-       </div>  
-       <div class="inputfield">
-          <label>Password</label>
-          <input type="password" class="input">
-       </div>  
-      <div class="inputfield">
-          <label>Confirm Password</label>
-          <input type="password" class="input">
-       </div> 
+    
 
+    <form action="login.html" onsubmit="return registration()">
+
+      <div class="title">
+        Registration Form
+      </div>
+      <!-- textfield and password -->
+
+      <div class="form">
         <div class="inputfield">
-          <label>Gender</label> 
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Female">
-            <label class="form-check-label" for="inlineRadio1">Female</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="Mlae">
-            <label class="form-check-label" for="inlineRadio2">Male</label>
-          </div>
+           <label>First Name</label>
+           <input type="text" class="input" required >
+        </div>  
+         <div class="inputfield">
+           <label>Last Name</label>
+           <input type="text" class="input" required>
+        </div>  
+        <div class="inputfield">
+           <label>Password</label>
+           <input type="password" class="input" id="password">
+        </div>  
+       <div class="inputfield">
+           <label>Confirm Password</label>
+           <input type="password" class="input">
+        </div> 
+ 
+         <div class="inputfield">
+           <label>Gender</label> 
+           <div class="form-check form-check-inline">
+             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Female" required>
+             <label class="form-check-label" for="inlineRadio1">Female</label>
+           </div>
+           <div class="form-check form-check-inline">
+             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="Mlae" required>
+             <label class="form-check-label" for="inlineRadio2">Male</label>
+           </div>
+        </div>
+ 
+         <div class="inputfield">
+           <label>Email Address</label>
+           <input type="text" placeholder="Email Address" id="email">
+        </div> 
+ 
+       <div class="inputfield">
+           <label>Phone Number</label>
+           <input type="number" class="input" id="phonenumber" maxlength="10">
+        </div> 
+ 
+       <div class="inputfield">
+           <label>Address</label>
+           <textarea class="textarea" required></textarea>
+        </div> 
+ 
+       <div class="inputfield">
+         <input type="submit" value="Register" class="btn">
        </div>
 
-        <div class="inputfield">
-          <label>Email Address</label>
-          <input type="text" class="input">
-       </div> 
 
-      <div class="inputfield">
-          <label>Phone Number</label>
-          <input type="text" class="input">
-       </div> 
-
-      <div class="inputfield">
-          <label>Address</label>
-          <textarea class="textarea"></textarea>
-       </div> 
-
-      <div class="inputfield">
-        <input type="submit" value="Register" class="btn">
-      </div>
+    
+    </form>
 
     </div>
+  
 </div>	
-	
+	<script src="./js/signup.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+     
+
 </body>
 </html>
